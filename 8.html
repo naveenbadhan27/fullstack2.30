@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.ab{
+			height: 100px;
+			width: 100px;
+			/*background: url('img/36304.jpg');*/
+			background: rgb(235, 64, 52);
+			transform: rotate(20deg);
+			box-shadow: 3px 3px 3px 3px maroon;
+		}
+		.ab:hover{
+			color: white;
+			/*background: green;*/
+		}
+		.ac{
+			height: 100px;
+			width: 100px;
+			background: blue;
+			margin-top: -50px;
+			margin-left: 50px;
+			opacity: .1;
+		}
+
+		.parent{
+			height: 300px;
+			width: 300px;
+			background: yellow;
+		}
+		.child{
+			height: 100px;
+			width: 100px;
+			background: pink;
+			display: none;
+			/*opacity: 0;*/
+		}
+		.parent:hover .child{
+			display: block;
+			background: blueviolet;
+		}
+/*		.list1:hover li{
+			background: green;
+		}*/
+		.list1 li:hover{
+			background: green;
+		}
+		.list1 li{
+			display: inline;
+		}
+		.lm:hover{
+			color: red;
+		}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+
+	<img src="img/36307.jpg" height="100px">
+
+	<p class="lm">Hello</p>
+
+
+	<div class="ab">
+		Hello, hi my name is naveen.
+	</div>
+	<div class="ac">
+	</div>
+
+	<div class="parent">
+
+		<div class="child"></div>
+		hello
+	</div>
+
+
+	<ul class="list1">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+
+
+</body>
+</html>
