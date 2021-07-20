@@ -1,0 +1,41 @@
+		body,html{
+			padding: 0px;
+			margin: 0px;
+		}
+		.navbar{
+			height: 70px;
+			width: 100%;
+			background: rebeccapurple;
+		}
+		.brand{
+			color: white;
+			font-size: 40px;
+			font-family: gabriola;
+		}
+		.nav{
+			position: absolute;
+			right: 100px;
+			top: 0px;
+		}
+		.nav li{
+			display: inline;
+			padding: 10px 15px;
+		}
+		.nav .active{
+			background: floralwhite;
+		}
+		.nav .active a{
+			color: rebeccapurple;
+		}
+		.nav li:hover{
+			background: whitesmoke;
+		}
+		.nav li a{
+			text-decoration: none;
+			color: whitesmoke;
+			font-family: gabriola;
+			font-size: 25px;
+		}
+		.nav li:hover a{
+			color: rebeccapurple;
+		}
