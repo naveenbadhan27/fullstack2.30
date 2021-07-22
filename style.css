@@ -11,6 +11,7 @@
 			color: white;
 			font-size: 40px;
 			font-family: gabriola;
+			margin-left: 20px;
 		}
 		.nav{
 			position: absolute;
@@ -21,12 +22,10 @@
 			display: inline;
 			padding: 10px 15px;
 		}
-		.nav .active{
-			background: floralwhite;
-		}
-		.nav .active a{
+		.nav li:hover a{
 			color: rebeccapurple;
 		}
+
 		.nav li:hover{
 			background: whitesmoke;
 		}
@@ -36,6 +35,110 @@
 			font-family: gabriola;
 			font-size: 25px;
 		}
-		.nav li:hover a{
-			color: rebeccapurple;
+
+
+		.home{
+			height: 600px;
+			width: 100%;
+			background: url('https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg');
+			background-size: 100%;
+			background-position: center;
+			background-attachment: fixed;
+			text-align: center;
+			font-size: 30px;
 		}
+		.shadow{
+			height: 600px;
+			width: 100%;
+			background: linear-gradient(to top, rgb(1, 1, 1, .8), rgb(125, 1, 1, .5));
+			position: absolute;
+		}
+		.home .txt{
+			width: 60%;
+			margin: auto;
+			color: whitesmoke;
+			padding-bottom: 30px;
+			position: relative;
+			font-family: gabriola;
+		}
+		.home .btn{
+			font-size: 25px;
+			padding: 10px 15px;
+			border: 3px solid whitesmoke;
+			background: transparent;
+			color: whitesmoke;
+			border-radius: 5px;
+			cursor: pointer;
+			position: relative;
+			z-index: 1;
+		}
+
+
+		.about{
+			width: 100%;
+			min-height: 400px;
+		}
+		.left{
+			width: 30%;
+		}
+		.right{
+			width: 68%;
+			margin-top: -310px;
+			margin-left: 30%;
+			font-size: 20px;
+			line-height: 35px;
+			font-family: arial;
+			word-spacing: 10px;
+			text-align: center;
+		}
+		.about .left img{
+			width: 80%;
+			margin-left: 10%;
+		}
+		.right h3{
+			width: 100px;
+			border-bottom: 2px solid maroon;
+			margin: auto;
+		}
+
+		.container{
+			width: 80%;
+			margin: auto;
+		}
+
+		.box{
+			height: 430px;
+			width: 30%;
+			/*box-shadow: 0px 0px 5px inset green;*/
+			padding-top: 30px;
+			padding-bottom: 5px;
+			border-radius: 5px;
+			background: linear-gradient(to top,rgb(1, 1, 1,.5),rgb(120, 1, 120,.5));
+			/*position: absolute;*/
+		}
+		.box img{
+			width: 80%;
+			margin-left: 10%;
+			border-radius: 5px;
+		}
+		.box .txt2{
+			width: 80%;
+			margin-left: 10%;
+		}
+		.box .txt2 p{
+			text-align: justify;
+		}
+		.bx2{
+			margin-left: 33%;
+			margin-top: -465px;
+		}
+		.bx3{
+			margin-left: 66%;
+			margin-top: -465px;
+		}
+
+
+
+
+
+
