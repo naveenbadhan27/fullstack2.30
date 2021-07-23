@@ -36,14 +36,21 @@
 			font-size: 25px;
 		}
 
-
-		.home{
-			height: 600px;
-			width: 100%;
+		body{
 			background: url('https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg');
 			background-size: 100%;
 			background-position: center;
 			background-attachment: fixed;
+
+		}
+
+		.home{
+			height: 600px;
+			width: 100%;
+/*			background: url('https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg');
+			background-size: 100%;
+			background-position: center;
+			background-attachment: fixed;*/
 			text-align: center;
 			font-size: 30px;
 		}
@@ -61,7 +68,7 @@
 			position: relative;
 			font-family: gabriola;
 		}
-		.home .btn{
+		.btn{
 			font-size: 25px;
 			padding: 10px 15px;
 			border: 3px solid whitesmoke;
@@ -72,6 +79,9 @@
 			position: relative;
 			z-index: 1;
 		}
+		h3{
+			color: whitesmoke;
+		}
 
 
 		.about{
@@ -80,6 +90,19 @@
 		}
 		.left{
 			width: 30%;
+		}
+		.about-shadow{
+			height: 380px;
+			width: 100%;
+			background: rgb(1, 1, 1,.6);
+			position: absolute;
+			z-index: 1;
+			/*margin-left: -50px;*/
+			display: none;
+			margin-top: 10px;
+		}
+		.about:hover .about-shadow{
+			display: block;
 		}
 		.right{
 			width: 68%;
@@ -90,20 +113,29 @@
 			font-family: arial;
 			word-spacing: 10px;
 			text-align: center;
+			color: whitesmoke;
+			text-shadow: 0px 0px 20px black;
+		}
+		.right span,.right h3{
+			position: relative;
+			z-index: 3;
 		}
 		.about .left img{
 			width: 80%;
 			margin-left: 10%;
+			position: relative;
+			z-index: 2;
 		}
 		.right h3{
 			width: 100px;
-			border-bottom: 2px solid maroon;
+			border-bottom: 2px solid ghostwhite;
 			margin: auto;
 		}
 
 		.container{
 			width: 80%;
 			margin: auto;
+			padding-bottom: 50px;
 		}
 
 		.box{
@@ -113,7 +145,7 @@
 			padding-top: 30px;
 			padding-bottom: 5px;
 			border-radius: 5px;
-			background: linear-gradient(to top,rgb(1, 1, 1,.5),rgb(120, 1, 120,.5));
+			background: linear-gradient(to top,rgb(255, 1, 1,.5),rgb(140, 1, 120,.5));
 			/*position: absolute;*/
 		}
 		.box img{
@@ -124,18 +156,147 @@
 		.box .txt2{
 			width: 80%;
 			margin-left: 10%;
+			color: whitesmoke;
 		}
 		.box .txt2 p{
 			text-align: justify;
 		}
 		.bx2{
-			margin-left: 33%;
+			margin-left: 35%;
 			margin-top: -465px;
 		}
 		.bx3{
-			margin-left: 66%;
+			margin-left: 70%;
 			margin-top: -465px;
 		}
+
+.mega{
+	position: relative;
+	z-index: 2;
+	list-style-type: none;
+	padding: 0px;
+}
+.mega li{
+	width: 100%;
+	transition: 1s;
+	/*background: whitesmoke;*/
+}
+.mega li .v1{
+	color: whitesmoke;
+}
+.mega li .v2{
+	display: none;
+}
+.mega li:hover .v2{
+	display: block;
+}
+.mega li:hover .v1{
+	display: none;
+}
+.mega li:hover{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: whitesmoke;
+}
+
+
+.cLeft,.cRight{
+	width: 50%;
+}
+.cLeft iframe{
+	width: 90%;
+	margin-left: 5%;
+}
+.cRight{
+	margin-left: 50%;
+	margin-top: -450px;
+	background: rgb(1, 1, 1, .7);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.form{
+	width: 80%;
+	margin-left: 10%;
+}
+.form .form-gr{
+	padding-bottom: 20px;
+}
+.form .form-gr .ctrl{
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 0px;
+	/*margin-bottom: 20px;*/
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+		.nav{
+			right: 30px;
+		}
+		body{
+			background: url('https://images.all-free-download.com/images/graphiclarge/the_tears_background_wallpaper_02_hq_pictures_170039.jpg');
+			background-size: 100%;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.shadow{
+			height: 450px;
+			background: linear-gradient(to top, rgb(1, 1, 1, .8), rgb(125, 1, 1, .5));
+		}
+		.left{
+			width: 100%;
+		}
+		.about-shadow{
+			background: transparent;
+		}
+		.right{
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0%;
+		}
+		.about .left img{
+			width: 50%;
+			margin-left: 25%;
+		}
+		.box{
+			height: auto;
+			width: 80%;
+			margin: auto;
+		}
+		.bx2{
+			margin-left: 10%;
+			margin-top: 10px;
+		}
+		.bx3{
+			margin-left: 10%;
+			margin-top: 10px;
+		}
+
+.cLeft,.cRight{
+	width: 100%;
+}
+.cLeft iframe{
+	width: 90%;
+	margin-left: 5%;
+}
+.cRight{
+	margin-left: 0%;
+	margin-top: 10px;
+}
+
+
+
+}
+
+
+
+
 
 
 
