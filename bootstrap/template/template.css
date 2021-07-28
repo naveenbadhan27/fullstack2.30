@@ -1,0 +1,86 @@
+.navbar-default{
+	background: #1a204f;
+	padding: 15px 35px;
+	border: 0px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.navbar-brand{
+	color: whitesmoke !important;
+	font-family: times new roman;
+}
+.navbar-nav li a{
+	color: whitesmoke !important;
+	font-size: 13px;
+	padding: 15px 10px;
+}
+
+
+.Home{
+	height: 700px;
+	background: url('Notebook.webp') !important;
+	background-size: 100% !important;
+	background-attachment: fixed !important;
+	/*background-position: center !important;*/
+	padding: 0px !important;
+}
+.Home .col-lg-6{
+	height: 100%;
+	padding: 0px !important;
+	background: rgb(255, 255, 255,.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Home .col-lg-6 h1{
+	color: #1a204f !important;
+	font-size: 50px !important;
+	font-family: times new roman;
+}
+.Home .col-lg-6 p{
+	color: #1a204f !important;
+	font-family: times new roman;
+	font-size: 17px;
+}
+
+
+.posts{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: dimgrey;
+}
+.heading{
+	padding: 10px;
+}
+.heading .col-lg-6 a{
+	font-size: 16px;
+	color: grey;
+}
+.heading .col-lg-6 .search{
+	background: transparent;
+}
+.heading .col-lg-6 .btn-default{
+	border-radius: 0px !important;
+	border: 1px solid;
+	padding: 5px 20px;
+	font-family: arial;
+}
+.heading .col-lg-6 .btn-default:hover{
+	background: transparent;
+}
+
+.posts .body{
+	border: 1px solid lightgrey !important;
+	padding: 0px;
+	margin-bottom: 50px;
+}
+.posts .body .col-lg-6{
+	padding: 0px;
+}
+.posts .body .col-lg-6 .head{
+	padding: 20px;
+}
+
+
