@@ -76,11 +76,61 @@
 	padding: 0px;
 	margin-bottom: 50px;
 }
-.posts .body .col-lg-6{
+.posts .body .col-lg-6,.map{
 	padding: 0px;
 }
 .posts .body .col-lg-6 .head{
 	padding: 20px;
 }
 
-
+.contact,.footer{
+	background: #1a204f;
+	color: white;
+	padding-top: 70px;
+}
+.subsr p{
+	font-family: times new roman;
+	font-size: 20px;
+}
+.subsr p span{
+	font-family: arial;
+	font-size: 17px;
+}
+.inp{
+	background: transparent;
+	border-radius: 0px;
+	border: 1px solid whitesmoke;
+}
+.bt{
+	border-radius: 0px;
+}
+.subsr{
+	padding-bottom: 70px;
+}
+.con .left{
+	text-align: center;
+}
+.left{
+	padding: 50px;
+}
+.left h2,.left p{
+	font-family: Book Antiqua;
+}
+.left p{
+	font-size: 16px;
+}
+.lg{
+	padding: 10px 30px;
+}
+.footer{
+	text-align: center;
+}
+.f-icons,.f-head{
+	padding-bottom: 30px;
+}
+.pos{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 3;
+}
