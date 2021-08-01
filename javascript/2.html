@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+<button onclick="abc()">Click</button>
+<p id="print"></p>
+
+<script type="text/javascript">
+
+	function abc(){
+		// document.write('Hello');
+		document.getElementById('print').innerHTML = 'Hello';
+	}
+
+	// alert();
+	// abc();
+</script>
+
+
+
+
+
+
+<input type="text" id="name" placeholder="Fill your Name">
+
+<p id="printhere"></p>
+
+<button onclick="submit()">Click</button>
+
+<button onclick="color()">Change Color</button>
+
+<script type="text/javascript">
+	
+	function submit(){
+		var a = document.getElementById('name').value;
+		document.getElementById('printhere').innerHTML = a;
+	}
+
+	function color(){
+		document.getElementById('printhere').style.color = 'red';
+	}
+
+</script>
+
+<!-- 
+border-radius
+
+borderRadius
+ -->
+
+
+
+<select id="city" onchange="city()">
+	<option value="">Choose City</option>
+	<option>Ludhiana</option>
+	<option>Phagwara</option>
+	<option>Jalandhar</option>
+</select>
+
+<p id="cityname"></p>
+
+<script type="text/javascript">
+	function city(){
+		var ct = document.getElementById('city').value;
+		document.getElementById('cityname').innerHTML = ct;
+	}
+</script>
+
+
+
+
+<input type="text" id="textt" onkeyup="fillname()" placeholder="Fill your name">
+
+<p id="printname"></p>
+
+<script type="text/javascript">
+	
+	function fillname(){
+		var fn = document.getElementById('textt').value;
+		document.getElementById('printname').innerHTML = fn;
+	}
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
