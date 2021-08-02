@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.box,.box2{
+			height: 400px;
+			width: 60%;
+			margin: auto;
+			background: pink;
+			box-shadow: 0px 0px 5px black;
+			cursor: crosshair;
+			text-align: center;
+			/*display: flex;*/
+		}
+		.object{
+			height: 30px;
+			width: 30px;
+			background: maroon;
+			border-radius: 50%;
+		}
+		.scoreboard{
+			height: 100px;
+			width: 60%;
+			margin: auto;
+			background: lightcyan;
+			box-shadow: 0px 0px 5px black;
+			margin-top: 100px;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.left,.right{
+			position: absolute;
+			font-size: 30px;
+			font-family: gabriola;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+		.left{
+			margin-left: 30px;
+		}
+		.right{
+			margin-left: 50%;
+		}
+		.box2 h1{
+			margin-top: 170px;
+			/*margin-left: 370px;*/
+		}
+		#overall{
+			display: none;
+			margin-top: 100px;
+		}
+		.btn{
+			border: 0px;
+			font-size: 20px;
+			padding: 10px 15px;
+			border-radius: 5px;
+			background: darkcyan;
+			color: whitesmoke;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<div id="game">
+<div class="scoreboard">
+	<div class="left">
+		Bullet Left - 
+		<span class="bullet" id="bullet"></span>
+		<button class="btn" onclick="reload()">Reload</button>
+	</div>
+
+	<div class="right">
+		Scores - 
+		<span class="score" id="score"></span>
+	</div>
+</div>
+<div class="box" onclick="shoot()">
+	<div class="object" onclick="fire()">
+	</div>
+</div>
+</div>
+
+
+<div id="overall" class="box2">
+	<h1>
+		Game Over
+		<br>
+		Total Score - <span id="scores"></span>
+		<br>
+		<button class="btn" onclick="start()">Start New Game</button>
+	</h1>
+</div>
+
+
+
+
+<script type="text/javascript">
+	
+
+	var bullet_no = 5;
+	var score_no = 0;
+
+	function start(){
+			bullet_no = 5;
+			score_no = 0;
+			document.getElementById('overall').style.display = 'none';
+			document.getElementById('game').style.display = 'block';		
+			bullet();
+			score();
+	}
+
+	function bullet(){
+		document.getElementById('bullet').innerHTML = bullet_no;
+	}
+	bullet();
+
+	function score(){
+		document.getElementById('score').innerHTML = score_no;
+		document.getElementById('scores').innerHTML = score_no;
+	}
+	score();
+
+	function fire(){
+		score_no = score_no + 1;
+		score();
+	}
+
+
+	function reload(){
+		bullet_no = 5;
+		bullet();
+	}
+
+
+	function shoot(){
+		if (bullet_no == 0) {
+			alert('Game Over');
+			document.getElementById('game').style.display = 'none';
+			document.getElementById('overall').style.display = 'block';
+		}else{
+			bullet_no = bullet_no - 1;
+			bullet();
+		}
+	}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
